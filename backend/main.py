@@ -151,6 +151,5 @@ def main():
     get_data(query)
 
 
-
 if __name__ == "__main__":
     main()
