@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-def get_data():
+def get_data(query):
 
     cookies = {
         '__lhash_': '79cde6ef05240b77d22844d7ada14038',
@@ -130,7 +130,7 @@ def get_data():
     }
 
     params = {
-        'query': 'ноутбук asus',
+        'query': query,
         'offset': '0',
         'limit': '24',
         'filterParams': 'WyJ0b2xrby12LW5hbGljaGlpIiwiLTEyIiwiZGEiXQ==',
@@ -147,19 +147,8 @@ def get_data():
 
 
 def main():
-    # url = 'https://www.mvideo.ru/'
-    # # get = input('Введите запрос\n')
-    # url += 'product-list-page?q=' + 'ноутбук'
-    # print(url)
-    # headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0'}
-    # r = requests.get(url, headers=headers)
-    # r.encoding = 'utf-8'
-    # print(r.url)
-    # soup = BeautifulSoup(r.text, 'html.parser')
-    # with open('file.html', 'w', encoding="utf-8") as file:
-    #     file.write(soup.prettify())
-    # print(soup.find('input', class_='input__field'))
-    get_data()
+    query = input('Введите запрос\n')
+    get_data(query)
 
 
 
