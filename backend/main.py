@@ -129,7 +129,7 @@ def get_data(query):
         # 'TE': 'trailers',
     }
 
-    params = {
+    params_q = {
         'query': query,
         'offset': '0',
         'limit': '24',
@@ -138,8 +138,21 @@ def get_data(query):
         'context': 'eyJxdWVyeSI6ItC90L7Rg9GC0LHRg9C6IGxlbm92byB0aGlua3BhZCIsInNob3BJZHMiOlsiUzAwMiJdLCJzdHJhdGVneUlkIjoic3RlcDEiLCJoaWRkZW5GaXJzdEdyb3VwIjpbXSwiZmlyc3RHcm91cCI6WyIxMTgiXSwiZmlyc3RHcm91cFN0YWdlIjoiQkkiLCJyZXNwb25zZVR5cGUiOiJwbGFpbiIsImVucmljaG1lbnRJbmZvIjp7Im1hdGNoZWRCeUNvbmNlcHRzVG9rZW5zIjpbItCd0L7Rg9GC0LHRg9C60LgiLCJMZW5vdm8iLCJUaGlua1BhZCBUNDgwcyJdLCJjcHRDYXRlZ29yeUlzUmVsYXRlZCI6ZmFsc2UsImlzQ29tcGF0aWJpbGl0eSI6ZmFsc2UsIm1hdGNoZWRTZXJpZXNCeUNvbmNlcHRzIjoiVGhpbmtQYWQgVDQ4MHMifSwiYmlTdGF0cyI6eyIxMTgiOjEwMDB9fQ==',
     }
 
-    response = requests.get('https://www.mvideo.ru/bff/products/search', params=params, cookies=cookies, headers=headers).json()
+    params_l = {
+    'categoryId': '',
+    'offset': '0',
+    'limit': '24',
+    'filterParams': [
+        'WyJicmFuZCIsIiIsImFwcGxlIl0=',
+        'WyJ0b2xrby12LW5hbGljaGlpIiwiLTEyIiwiZGEiXQ==',
+    ],
+    'doTranslit': 'true',
+    }
 
+    response = requests.get('https://www.mvideo.ru/bff/products/search', params=params_q, cookies=cookies, headers=headers).json()
+    if response.get('body').get('products') == None:
+        
+        response = requests.get('https://www.mvideo.ru/bff/products/listing', params=params_q, cookies=cookies, headers=headers).json()
     product_ids = response.get('body').get('products')
     with open('product_ids.json', 'w') as file:
         json.dump(product_ids, file, indent=4)
