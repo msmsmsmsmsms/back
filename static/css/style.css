@@ -11,7 +11,13 @@
     height: 100px;
 }
 
-#header > button {
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit_btn {
     border: 0;
     margin: 5px;
     height: 40px;
@@ -23,7 +29,7 @@
     padding-left: 6px;
 }
 
-button:hover {
+#submit_btn:hover {
     cursor: pointer;
     transform:scale(1.1);
 }

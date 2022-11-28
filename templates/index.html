@@ -11,10 +11,12 @@
 </head>
 <body>
     <div id="header">
-        <input type="text" id="search"></input>
-        <button type="submit" pys-Onclick="method" id="submit_btn">
-            <div class="arrow"></div>
-        </button>
+        <form method="POST" action=""> 
+            <input type="text" name="search" id="search"></input>
+            <input type="submit" pys-Onclick="method" id="submit_btn" value="">
+                <div class="arrow"></div>
+            </input>
+        </form>
     </div>
     <div id="main">
         <div id="mvideo"></div>
