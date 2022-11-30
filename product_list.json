@@ -1,14 +1,17 @@
 {
     "30063190": {
         "price": 95999,
-        "name": "Смартфон Apple iPhone 13 Pro Max 128GB Alpine Green"
+        "name": "Смартфон Apple iPhone 13 Pro Max 128GB Alpine Green",
+        "link": "https://www.mvideo.ru/products/30063190"
     },
     "30063191": {
         "price": 107999,
-        "name": "Смартфон Apple iPhone 13 Pro Max 256GB Alpine Green"
+        "name": "Смартфон Apple iPhone 13 Pro Max 256GB Alpine Green",
+        "link": "https://www.mvideo.ru/products/30063191"
     },
     "30063582": {
         "price": 95999,
-        "name": "Смартфон Apple iPhone 13 Pro Max 128GB Gold"
+        "name": "Смартфон Apple iPhone 13 Pro Max 128GB Gold",
+        "link": "https://www.mvideo.ru/products/30063582"
     }
 }

@@ -144,12 +144,6 @@ def get_data(query):
     with open('product_ids.json', 'w') as file:
         json.dump(product_ids, file, indent=4)
 
-    # link_list = []
-
-    # for i in range(0, len(product_ids)):
-    #     link = 'https://www.mvideo.ru/' + 'products/' + product_ids[i]
-    #     link_list.append(link)
-
 
 def parse_product():
     with open('product_ids.json', 'r') as file:
@@ -176,8 +170,9 @@ def parse_product():
 
         price = response_prices.get('body').get('materialPrices')[0]['price']['salePrice']
         details = response_details.get('body').get('name')
+        link = 'https://www.mvideo.ru/' + 'products/' + product_ids[i]
 
-        product_list[product_ids[i]] = {'price': price, 'name': details}
+        product_list[product_ids[i]] = {'price': price, 'name': details, 'link': link}
     
     with open('product_list.json', 'w', encoding='utf-8') as file:
         json.dump(product_list, file, indent=4, ensure_ascii=False)   
