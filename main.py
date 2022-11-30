@@ -158,22 +158,37 @@ def parse_product():
         products_json = file.read()
     product_ids = json.loads(products_json)
 
-    params = {
+    params_prices = {
         'isPromoApplied': 'true',
         'addBonusRubles': 'true'
     }
 
-    response = requests.get('https://www.mvideo.ru/bff/products/prices', params=params, cookies=COOKIES, headers=HEADERS).json()
+    params_details = {
+    'multioffer': 'true'
+    }
 
-    price = response.get('body').get('materialPrices')[0]['price']['salePrice']
+    for i in range(3):
+        params_prices['productIds'] = product_ids[i]
+        params_details['productId'] = product_ids[i]
 
-    print(price)
+        response_prices = requests.get('https://www.mvideo.ru/bff/products/prices', params=params_prices, cookies=COOKIES, headers=HEADERS).json()
+        response_details = requests.get('https://www.mvideo.ru/bff/product-details', params=params_details, cookies=COOKIES, headers=HEADERS).json()
+
+        price = response_prices.get('body').get('materialPrices')[0]['price']['salePrice']
+        details = response_details.get('body').get('name')
+
+        product_list = {}
+
+        for i in range(3):
+            # product_list[product_ids[i]] = {'price': price[i], 'name': details[i]}
+            product_ids[i] = {'price': price[i], 'name': details[i]}
+        print(product_ids)      
+
 
 def main(q):
-    query = q
-    get_data(query)
+    get_data(q)
     parse_product()
 
 
 if __name__ == "__main__":
-    main('Ноутбук asus')
+    main('наушники airpods')
