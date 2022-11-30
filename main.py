@@ -125,6 +125,7 @@ COOKIES = {
 }
 
 def get_data(query):
+
     params = {
         'query': query,
         'offset': '0',
@@ -135,7 +136,6 @@ def get_data(query):
     }
 
     response = requests.get('https://www.mvideo.ru/bff/products/search', params=params, cookies=COOKIES, headers=HEADERS).json()
-
     product_ids = response.get('body').get('products')
 
     while (len(product_ids) > 3):
@@ -144,13 +144,11 @@ def get_data(query):
     with open('product_ids.json', 'w') as file:
         json.dump(product_ids, file, indent=4)
 
-    link_list = []
+    # link_list = []
 
-    for i in range(0, len(product_ids)):
-        link = 'https://www.mvideo.ru/' + 'products/' + product_ids[i]
-        link_list.append(link)
-    
-    return link_list
+    # for i in range(0, len(product_ids)):
+    #     link = 'https://www.mvideo.ru/' + 'products/' + product_ids[i]
+    #     link_list.append(link)
 
 
 def parse_product():
@@ -164,8 +162,10 @@ def parse_product():
     }
 
     params_details = {
-    'multioffer': 'true'
+        'multioffer': 'true'
     }
+
+    product_list = {}
 
     for i in range(3):
         params_prices['productIds'] = product_ids[i]
@@ -177,12 +177,10 @@ def parse_product():
         price = response_prices.get('body').get('materialPrices')[0]['price']['salePrice']
         details = response_details.get('body').get('name')
 
-        product_list = {}
-
-        for i in range(3):
-            # product_list[product_ids[i]] = {'price': price[i], 'name': details[i]}
-            product_ids[i] = {'price': price[i], 'name': details[i]}
-        print(product_ids)      
+        product_list[product_ids[i]] = {'price': price, 'name': details}
+    
+    with open('product_list.json', 'w', encoding='utf-8') as file:
+        json.dump(product_list, file, indent=4, ensure_ascii=False)   
 
 
 def main(q):
@@ -191,4 +189,4 @@ def main(q):
 
 
 if __name__ == "__main__":
-    main('наушники airpods')
+    main('iphone 13 pro max')
