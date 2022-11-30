@@ -12,8 +12,8 @@ def index():
 @app.route('/', methods=['POST', 'GET'])
 def get_search():
     q = request.form['search']
-    link = get_data(q)
-    return link
+    link_list = get_data(q)
+    return link_list
 
 
 if __name__ == "__main__":
