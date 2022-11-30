@@ -24,7 +24,7 @@
     padding-left: 10px;
 }
 
-button:hover {
+#submit_btn:hover {
     cursor: pointer;
     transform:scale(1.1);
 }
