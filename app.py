@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for, request
-from main import main, get_data
+from main import main
 
 app = Flask(__name__)
 
@@ -12,8 +12,8 @@ def index():
 @app.route('/', methods=['POST', 'GET'])
 def get_search():
     q = request.form['search']
-    link_list = get_data(q)
-    return link_list
+    product_list = main(q)
+    return render_template("card.html", context=product_list)
 
 
 if __name__ == "__main__":

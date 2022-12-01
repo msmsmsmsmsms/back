@@ -65,3 +65,53 @@ iframe {
     height: 20px;
     transform: rotate(45deg);
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box {
+    max-width: 50%;
+    width: fit-content;
+    border: 1px solid black;
+    display: flex;
+    padding: 16px;
+}
+
+#info_block > * {
+    margin-right: 32px;
+}
+
+#name {
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+#price {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.line  {
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+#box > button {
+    border: 0;
+    font-size: 14px;
+    width: 75px;
+    height: 75px;
+    background: red;
+    border-radius: 15px;
+    color: white;
+    transition: 0.2s;
+}
+
+#box > button:hover {
+    cursor: pointer;
+    transform:rotate(5deg);
+}

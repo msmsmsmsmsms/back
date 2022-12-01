@@ -160,6 +160,7 @@ def parse_product():
     }
 
     product_list = {}
+    product_list['products'] = []
 
     for i in range(3):
         params_prices['productIds'] = product_ids[i]
@@ -172,10 +173,10 @@ def parse_product():
         details = response_details.get('body').get('name')
         link = 'https://www.mvideo.ru/' + 'products/' + product_ids[i]
 
-        product_list[product_ids[i]] = {'price': price, 'name': details, 'link': link}
+        product_list['products'].append({'name': details, 'price': price, 'link': link})
     
     with open('product_list.json', 'w', encoding='utf-8') as file:
-        json.dump(product_list, file, indent=4, ensure_ascii=False)   
+        json.dump(product_list, file, indent=4, ensure_ascii=False)
 
 
 def main(q):
@@ -184,4 +185,4 @@ def main(q):
 
 
 if __name__ == "__main__":
-    main('iphone 13 pro max')
+    main()
