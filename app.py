@@ -12,8 +12,8 @@ def index():
 @app.route('/', methods=['POST', 'GET'])
 def get_search():
     q = request.form['search']
-    product_list = main(q)
-    return render_template("card.html", context=product_list)
+    context = main(q)
+    return render_template("card.html", context=context)
 
 
 if __name__ == "__main__":

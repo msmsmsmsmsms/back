@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title></title>
+
 </head>
 <body>
+{% for product in context.products %}
     <div id="box">
-        {% for id in product_list.id %}
         <div id="info_block">
-            <div id="name">{{ id.name }}</div>
+            <div id="name">{{ product.name }}</div>
             <div class="line"></div>
-            <div id="price">{{ id.name }}</div>
+            <div id="price">{{ product.price }} р.</div>
         </div>
-        <div id='button'><a href="{{ id.link }}">Перейти</a></div>
-        {% endfor %}
+        <a href="{{ product.link }}">
+        <div id='button'>Перейти</div> 
+        </a>
     </div>
+{% endfor %}
 </body>
 </html>

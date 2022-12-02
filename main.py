@@ -178,10 +178,12 @@ def parse_product():
     with open('product_list.json', 'w', encoding='utf-8') as file:
         json.dump(product_list, file, indent=4, ensure_ascii=False)
 
+        return product_list
+
 
 def main(q):
     get_data(q)
-    parse_product()
+    return parse_product()
 
 
 if __name__ == "__main__":
