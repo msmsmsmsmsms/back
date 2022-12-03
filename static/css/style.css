@@ -103,3 +103,11 @@ a {
     cursor: pointer;
     transform:rotate(5deg);
 }
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform:uppercase;
+    padding: 32px;
+}

@@ -13,7 +13,7 @@ def index():
 def get_search():
     q = request.form['search']
     context = main(q)
-    return render_template("card.html", context=context)
+    return render_template("card.html", context=context, q=q)
 
 
 if __name__ == "__main__":

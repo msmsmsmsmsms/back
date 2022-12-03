@@ -2,7 +2,7 @@ import requests
 import json
 from flask import render_template
 
-HEADERS = {
+HEADERS_MVIDEO = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0',
     'Accept': '*/*',
     'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
@@ -18,7 +18,7 @@ HEADERS = {
     # 'TE': 'trailers',
 }
 
-COOKIES = {
+COOKIES_MVIDEO = {
     '__lhash_': '79cde6ef05240b77d22844d7ada14038',
     'CACHE_INDICATOR': 'false',
     'COMPARISON_INDICATOR': 'false',
@@ -124,9 +124,22 @@ COOKIES = {
     '_dc_gtm_UA-1873769-37': '1',
 }
 
-def get_data(query):
+HEADERS_CITYLINK = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0',
+    'Accept': '*/*',
+    'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+    # 'Accept-Encoding': 'gzip, deflate, br',
+    'Origin': 'https://www.citilink.ru',
+    'Connection': 'keep-alive',
+    'Referer': 'https://www.citilink.ru/',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'cross-site',
+    }
 
-    params = {
+def parse_mvideo(query):
+
+    params_product = {
         'query': query,
         'offset': '0',
         'limit': '24',
@@ -134,21 +147,6 @@ def get_data(query):
         'doTranslit': 'true',
         'context': 'eyJxdWVyeSI6ItC90L7Rg9GC0LHRg9C6IGxlbm92byB0aGlua3BhZCIsInNob3BJZHMiOlsiUzAwMiJdLCJzdHJhdGVneUlkIjoic3RlcDEiLCJoaWRkZW5GaXJzdEdyb3VwIjpbXSwiZmlyc3RHcm91cCI6WyIxMTgiXSwiZmlyc3RHcm91cFN0YWdlIjoiQkkiLCJyZXNwb25zZVR5cGUiOiJwbGFpbiIsImVucmljaG1lbnRJbmZvIjp7Im1hdGNoZWRCeUNvbmNlcHRzVG9rZW5zIjpbItCd0L7Rg9GC0LHRg9C60LgiLCJMZW5vdm8iLCJUaGlua1BhZCBUNDgwcyJdLCJjcHRDYXRlZ29yeUlzUmVsYXRlZCI6ZmFsc2UsImlzQ29tcGF0aWJpbGl0eSI6ZmFsc2UsIm1hdGNoZWRTZXJpZXNCeUNvbmNlcHRzIjoiVGhpbmtQYWQgVDQ4MHMifSwiYmlTdGF0cyI6eyIxMTgiOjEwMDB9fQ==',
     }
-
-    response = requests.get('https://www.mvideo.ru/bff/products/search', params=params, cookies=COOKIES, headers=HEADERS).json()
-    product_ids = response.get('body').get('products')
-
-    while (len(product_ids) > 3):
-        product_ids.pop(len(product_ids) - 1)
-
-    with open('product_ids.json', 'w') as file:
-        json.dump(product_ids, file, indent=4)
-
-
-def parse_product():
-    with open('product_ids.json', 'r') as file:
-        products_json = file.read()
-    product_ids = json.loads(products_json)
 
     params_prices = {
         'isPromoApplied': 'true',
@@ -159,6 +157,15 @@ def parse_product():
         'multioffer': 'true'
     }
 
+    response = requests.get('https://www.mvideo.ru/bff/products/search', params=params_product, cookies=COOKIES_MVIDEO, headers=HEADERS_MVIDEO).json()
+    product_ids = response.get('body').get('products')
+
+    while (len(product_ids) > 3):
+        product_ids.pop(len(product_ids) - 1)
+
+    # with open('product_ids_mvideo.json', 'w') as file:
+    #     json.dump(product_ids, file, indent=4)
+
     product_list = {}
     product_list['products'] = []
 
@@ -166,8 +173,8 @@ def parse_product():
         params_prices['productIds'] = product_ids[i]
         params_details['productId'] = product_ids[i]
 
-        response_prices = requests.get('https://www.mvideo.ru/bff/products/prices', params=params_prices, cookies=COOKIES, headers=HEADERS).json()
-        response_details = requests.get('https://www.mvideo.ru/bff/product-details', params=params_details, cookies=COOKIES, headers=HEADERS).json()
+        response_prices = requests.get('https://www.mvideo.ru/bff/products/prices', params=params_prices, cookies=COOKIES_MVIDEO, headers=HEADERS_MVIDEO).json()
+        response_details = requests.get('https://www.mvideo.ru/bff/product-details', params=params_details, cookies=COOKIES_MVIDEO, headers=HEADERS_MVIDEO).json()
 
         price = response_prices.get('body').get('materialPrices')[0]['price']['salePrice']
         details = response_details.get('body').get('name')
@@ -175,16 +182,69 @@ def parse_product():
 
         product_list['products'].append({'name': details, 'price': price, 'link': link})
     
-    with open('product_list.json', 'w', encoding='utf-8') as file:
-        json.dump(product_list, file, indent=4, ensure_ascii=False)
+    # with open('product_list_mvideo.json', 'w', encoding='utf-8') as file:
+    #     json.dump(product_list, file, indent=4, ensure_ascii=False)
 
         return product_list
 
 
+# def parse_product():
+#     with open('product_ids.json', 'r') as file:
+#         products_json = file.read()
+#     product_ids = json.loads(products_json)
+
+
+def parse_citylink(query):
+
+    params = {
+        'st': query,
+        'apiKey': 'UCC76J09GL',
+    }
+
+    response = requests.get('https://autocomplete.diginetica.net/autocomplete', params=params, headers=HEADERS_CITYLINK).json()
+
+    products = {}
+    products = response.get('products')
+    
+    with open('citylink.json', 'w') as file:
+        json.dump(products, file, indent=4)
+    # product_ids = response.get('body').get('products')
+
+    # while (len(product_ids) > 3):
+    #     product_ids.pop(len(product_ids) - 1)
+
+    # with open('product_ids.json', 'w') as file:
+    #     json.dump(product_ids, file, indent=4)
+
+    # product_list = {}
+    # product_list['products'] = []
+
+    # for i in range(3):
+    #     params_prices['productIds'] = product_ids[i]
+    #     params_details['productId'] = product_ids[i]
+
+    #     response_prices = requests.get('https://www.mvideo.ru/bff/products/prices', params=params_prices, cookies=COOKIES_MVIDEO, headers=HEADERS_MVIDEO).json()
+    #     response_details = requests.get('https://www.mvideo.ru/bff/product-details', params=params_details, cookies=COOKIES_MVIDEO, headers=HEADERS_MVIDEO).json()
+
+    #     price = response_prices.get('body').get('materialPrices')[0]['price']['salePrice']
+    #     details = response_details.get('body').get('name')
+    #     link = 'https://www.mvideo.ru/' + 'products/' + product_ids[i]
+
+    #     product_list['products'].append({'name': details, 'price': price, 'link': link})
+    
+    # with open('product_list.json', 'w', encoding='utf-8') as file:
+    #     json.dump(product_list, file, indent=4, ensure_ascii=False)
+
+    # return product_list
+
+
 def main(q):
-    get_data(q)
-    return parse_product()
+    # return (parse_mvideo(q))
+    parse_citylink(q)
+    # get_data(q)
+    # parse_citylink(q)
+    # return parse_product()
 
 
 if __name__ == "__main__":
-    main()
+    main('ноутбук lenovo thinkpad')
