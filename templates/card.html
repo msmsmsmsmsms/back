@@ -19,7 +19,33 @@
 
     <h1>{{ q }}</h1>
     
-{% for product in context.products %}
+{% for product in context_mvideo.products %}
+    <div id="box">
+        <div id="info_block">
+            <div id="name">{{ product.name }}</div>
+            <div class="line"></div>
+            <div id="price">{{ product.price }} р.</div>
+        </div>
+        <a href="{{ product.link }}" target="blank">
+        <div id='button'>Перейти</div> 
+        </a>
+    </div>
+{% endfor %}
+
+{% for product in context_citylink.products %}
+    <div id="box">
+        <div id="info_block">
+            <div id="name">{{ product.name }}</div>
+            <div class="line"></div>
+            <div id="price">{{ product.price }} р.</div>
+        </div>
+        <a href="{{ product.link }}" target="blank">
+        <div id='button'>Перейти</div> 
+        </a>
+    </div>
+{% endfor %}
+
+{% for product in context_eldorado.products %}
     <div id="box">
         <div id="info_block">
             <div id="name">{{ product.name }}</div>

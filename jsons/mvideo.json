@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "name": "Ноутбук ASUS VivoBook 14 F415EA-UB34",
+            "price": 29999,
+            "link": "https://www.mvideo.ru/products/30064664"
+        },
+        {
+            "name": "Ноутбук ASUS R565JF-BR367 (90NB0SW2-M000A0)",
+            "price": 34999,
+            "link": "https://www.mvideo.ru/products/30062392"
+        },
+        {
+            "name": "Ноутбук ASUS Vivobook R465JA-EB1438W",
+            "price": 54999,
+            "link": "https://www.mvideo.ru/products/30061835"
+        }
+    ]
+}

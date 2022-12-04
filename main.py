@@ -137,6 +137,55 @@ HEADERS_CITYLINK = {
     'Sec-Fetch-Site': 'cross-site',
     }
 
+COOCKIES_ELDORADO = {
+    '__js_p_': '393,300,0,1,0',
+    '__jhash_': '361',
+    '__jua_': 'Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A107.0%29%20Gecko%2F20100101%20Firefox%2F107.0',
+    '__hash_': '7892ec2882c7d298680a9c4ca6d146ff',
+    '__lhash_': 'eaf6b8c6cc20c910ca205448aff3bd52',
+    'cfidsgib-w-eldorado': 'XqL3TDg6Y0UaVKl+cn5IdhCUy9C+r8JilsJRRsG9TxRJ/fKimJ7DCu/f3VkLdqsOCQvvCimDPp42Hi1hJ9ewWlB//yt3zSEAf30gFpaDaQXkHvIQTsmUjf8k5fE3p9/NXA5B0xFPS3uL9WQ9fYwqqpbDxx0xK5vjEgXJGg==',
+    'ab_user': '2630322480100',
+    'ab_segment': '26',
+    'iRegionSectionId': '11324',
+    'show_region_popup': '0',
+    '_slfs': '1670154426453',
+    'dt': '1',
+    'PHPSESSID': '1o1vprh8rvs4m087gs9bkgn282',
+    'grs': '11324',
+    'ABT_test': 'A',
+    'ek_ab_test': 'B',
+    'AUTORIZZ': '0',
+    'AC': '1',
+    'lv_user_org': '0',
+    'el_group_user_org': '0',
+    'bonus_cobrand_showed': '0',
+    'BITRIX_SM_SALE_UID': '31232757495',
+    'BITRIX_SM_SALE_UID_CS': '600f016e2367e9fd11c7a9f26a1262ed',
+    '_userGUID': '0:lb9at04o:zX~xKNFolGyvDB8GTQXCCtTuSgTNT8Ms',
+    'dSesn': 'e35974ca-eeab-40c3-d9bf-df6b83f8359f',
+    '_dvs': '0:lb9at04o:jvMlgUEuQw1I8lQlpLz5IEaAKNkFe5pk',
+    'gssc157': '',
+    '__zzatgib-w-eldorado': 'MDA0dC0cTApcfEJcdGswPi17CT4VHThHKHIzd2UqemZjJxEZJw0jGH1iGRl+KmZYOUYae0N1dRs3V10cESRYDiE/C2lbVjRnFRtASBgvS255MDtmImNLWyZHWFN1F2BKQys2FkZGHHIzdz9rCCIZURMqX3hHV2tlVUI4MWcMT09NOTMyMGZaK1kwOWNVdBkYNnJmfXynbQ==',
+    'cfidsgib-w-eldorado': 'XqL3TDg6Y0UaVKl+cn5IdhCUy9C+r8JilsJRRsG9TxRJ/fKimJ7DCu/f3VkLdqsOCQvvCimDPp42Hi1hJ9ewWlB//yt3zSEAf30gFpaDaQXkHvIQTsmUjf8k5fE3p9/NXA5B0xFPS3uL9WQ9fYwqqpbDxx0xK5vjEgXJGg==',
+    'gsscgib-w-eldorado': '0UXsl+OiwJbAXH+7sA5+ev6DvP9qUlSEYS7SNBooCob+zmMRpuTiwyHcaBqXgBah9Kpl3svHNfH3DZGTfOjFWYZ9I3bHjs1NUaapwgvhBukKnsn/RqaA6P2SHzteGF5GPeebFUxEPxKHR2HKlbWoHLUAy8qMGvrsa92+ze3rvgKBIU/c8fWqbqnUyP90Pel2idkDs2RHjMtmEeIVmtWA1CcF/A0nn8PMXNDIuugJlv23fnJ2I4YQ1X0eb+4NSP1LLA==',
+}
+
+HEADERS_ELDORADO = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0',
+    'Accept': 'application/json, text/plain, */*',
+    'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
+    # 'Accept-Encoding': 'gzip, deflate, br',
+    'Referer': 'https://www.eldorado.ru/c/smartfony/f/iphone-13/',
+    'Authorization': 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7IlNJRCI6IjFvMXZwcmg4cnZzNG0wODdnczlia2duMjgyIn0sImV4cCI6MTY3MDE1NjE5Nn0.SaeBYtp91S3ehDIL-yC2xASupMVqz-7nBP0RjK6NJkyfQAP_tEiSJ-vuWWCMzCBStF04VkItGjQs_b7WNSGTXg',
+    'Connection': 'keep-alive',
+    # 'Cookie': '__js_p_=393,300,0,1,0; __jhash_=361; __jua_=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A107.0%29%20Gecko%2F20100101%20Firefox%2F107.0; __hash_=7892ec2882c7d298680a9c4ca6d146ff; __lhash_=eaf6b8c6cc20c910ca205448aff3bd52; cfidsgib-w-eldorado=XqL3TDg6Y0UaVKl+cn5IdhCUy9C+r8JilsJRRsG9TxRJ/fKimJ7DCu/f3VkLdqsOCQvvCimDPp42Hi1hJ9ewWlB//yt3zSEAf30gFpaDaQXkHvIQTsmUjf8k5fE3p9/NXA5B0xFPS3uL9WQ9fYwqqpbDxx0xK5vjEgXJGg==; ab_user=2630322480100; ab_segment=26; iRegionSectionId=11324; show_region_popup=0; _slfs=1670154426453; dt=1; PHPSESSID=1o1vprh8rvs4m087gs9bkgn282; grs=11324; ABT_test=A; ek_ab_test=B; AUTORIZZ=0; AC=1; lv_user_org=0; el_group_user_org=0; bonus_cobrand_showed=0; BITRIX_SM_SALE_UID=31232757495; BITRIX_SM_SALE_UID_CS=600f016e2367e9fd11c7a9f26a1262ed; _userGUID=0:lb9at04o:zX~xKNFolGyvDB8GTQXCCtTuSgTNT8Ms; dSesn=e35974ca-eeab-40c3-d9bf-df6b83f8359f; _dvs=0:lb9at04o:jvMlgUEuQw1I8lQlpLz5IEaAKNkFe5pk; gssc157=; __zzatgib-w-eldorado=MDA0dC0cTApcfEJcdGswPi17CT4VHThHKHIzd2UqemZjJxEZJw0jGH1iGRl+KmZYOUYae0N1dRs3V10cESRYDiE/C2lbVjRnFRtASBgvS255MDtmImNLWyZHWFN1F2BKQys2FkZGHHIzdz9rCCIZURMqX3hHV2tlVUI4MWcMT09NOTMyMGZaK1kwOWNVdBkYNnJmfXynbQ==; cfidsgib-w-eldorado=XqL3TDg6Y0UaVKl+cn5IdhCUy9C+r8JilsJRRsG9TxRJ/fKimJ7DCu/f3VkLdqsOCQvvCimDPp42Hi1hJ9ewWlB//yt3zSEAf30gFpaDaQXkHvIQTsmUjf8k5fE3p9/NXA5B0xFPS3uL9WQ9fYwqqpbDxx0xK5vjEgXJGg==; gsscgib-w-eldorado=0UXsl+OiwJbAXH+7sA5+ev6DvP9qUlSEYS7SNBooCob+zmMRpuTiwyHcaBqXgBah9Kpl3svHNfH3DZGTfOjFWYZ9I3bHjs1NUaapwgvhBukKnsn/RqaA6P2SHzteGF5GPeebFUxEPxKHR2HKlbWoHLUAy8qMGvrsa92+ze3rvgKBIU/c8fWqbqnUyP90Pel2idkDs2RHjMtmEeIVmtWA1CcF/A0nn8PMXNDIuugJlv23fnJ2I4YQ1X0eb+4NSP1LLA==',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-origin',
+    # Requests doesn't support trailers
+    # 'TE': 'trailers',
+}
+
 def parse_mvideo(query):
 
     params_product = {
@@ -163,13 +212,10 @@ def parse_mvideo(query):
     while (len(product_ids) > 3):
         product_ids.pop(len(product_ids) - 1)
 
-    # with open('product_ids_mvideo.json', 'w') as file:
-    #     json.dump(product_ids, file, indent=4)
-
     product_list = {}
     product_list['products'] = []
 
-    for i in range(3):
+    for i in range(len(product_ids)):
         params_prices['productIds'] = product_ids[i]
         params_details['productId'] = product_ids[i]
 
@@ -182,16 +228,10 @@ def parse_mvideo(query):
 
         product_list['products'].append({'name': details, 'price': price, 'link': link})
     
-    # with open('product_list_mvideo.json', 'w', encoding='utf-8') as file:
-    #     json.dump(product_list, file, indent=4, ensure_ascii=False)
+    with open('jsons\mvideo.json', 'w', encoding='utf-8') as file:
+        json.dump(product_list, file, indent=4, ensure_ascii=False)
 
         return product_list
-
-
-# def parse_product():
-#     with open('product_ids.json', 'r') as file:
-#         products_json = file.read()
-#     product_ids = json.loads(products_json)
 
 
 def parse_citylink(query):
@@ -203,48 +243,57 @@ def parse_citylink(query):
 
     response = requests.get('https://autocomplete.diginetica.net/autocomplete', params=params, headers=HEADERS_CITYLINK).json()
 
-    products = {}
-    products = response.get('products')
+    product_list = {}
+    product_list['products'] = []
+    products_temp = response.get('products')
+
+    count = 0
+    for i in products_temp:
+        if count == 3:
+            break
+        if i.get('brand') != "NONAME":
+            product_list['products'].append({'name': i.get('name'), 'price': int(i.get('price')[0:len(i.get('price'))-2]), 'link': 'https://www.citilink.ru/' + i.get('link_url')})
+        count += 1
     
-    with open('citylink.json', 'w') as file:
-        json.dump(products, file, indent=4)
-    # product_ids = response.get('body').get('products')
+    with open('jsons\citylink.json', 'w', encoding='utf-8') as file:
+        json.dump(product_list, file, indent=4, ensure_ascii=False)
 
-    # while (len(product_ids) > 3):
-    #     product_ids.pop(len(product_ids) - 1)
+    return product_list
 
-    # with open('product_ids.json', 'w') as file:
-    #     json.dump(product_ids, file, indent=4)
 
-    # product_list = {}
-    # product_list['products'] = []
+def parse_eldorado(query):
 
-    # for i in range(3):
-    #     params_prices['productIds'] = product_ids[i]
-    #     params_details['productId'] = product_ids[i]
+    params = {
+    'rootRestrictedCategoryId': '0',
+    'query': query,
+    'orderField': 'popular',
+    'limit': '3',
+    'regionId': '11324',
+    'strategy': 'sold_amount_relevance',
+    }
 
-    #     response_prices = requests.get('https://www.mvideo.ru/bff/products/prices', params=params_prices, cookies=COOKIES_MVIDEO, headers=HEADERS_MVIDEO).json()
-    #     response_details = requests.get('https://www.mvideo.ru/bff/product-details', params=params_details, cookies=COOKIES_MVIDEO, headers=HEADERS_MVIDEO).json()
+    response = requests.get('https://www.eldorado.ru/sem/v3/a408/products', params=params, cookies=COOCKIES_ELDORADO, headers=HEADERS_ELDORADO).json()
 
-    #     price = response_prices.get('body').get('materialPrices')[0]['price']['salePrice']
-    #     details = response_details.get('body').get('name')
-    #     link = 'https://www.mvideo.ru/' + 'products/' + product_ids[i]
-
-    #     product_list['products'].append({'name': details, 'price': price, 'link': link})
+    product_list = {}
+    product_list['products'] = []
+    products_temp = response.get('data')
     
-    # with open('product_list.json', 'w', encoding='utf-8') as file:
-    #     json.dump(product_list, file, indent=4, ensure_ascii=False)
+    count = 0
+    for i in products_temp:
+        if count == 3:
+            break
+        product_list['products'].append({'name': i.get('name'), 'price': i.get('price'), 'link': 'https://www.eldorado.ru/cat/detail/' + str(i.get('id'))})
+        count += 1
 
-    # return product_list
+    with open ('jsons\eldorado.json', 'w', encoding='utf-8') as file:
+        json.dump(product_list, file, indent=4, ensure_ascii=False)
+
+    return product_list
 
 
 def main(q):
-    # return (parse_mvideo(q))
-    parse_citylink(q)
-    # get_data(q)
-    # parse_citylink(q)
-    # return parse_product()
+    return[parse_mvideo(q), parse_citylink(q), parse_eldorado(q)]
 
 
 if __name__ == "__main__":
-    main('ноутбук lenovo thinkpad')
+    main('')

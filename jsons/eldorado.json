@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "name": "Ноутбук ASUS R565JF-BQ294T",
+            "price": 39999,
+            "link": "https://www.eldorado.ru/cat/detail/71642991"
+        },
+        {
+            "name": "Ноутбук ASUS Vivobook R465JA-EB1467W",
+            "price": 69999,
+            "link": "https://www.eldorado.ru/cat/detail/71641738"
+        },
+        {
+            "name": "Ноутбук ASUS VivoBook R410MA-212.BK128",
+            "price": 17999,
+            "link": "https://www.eldorado.ru/cat/detail/71661468"
+        }
+    ]
+}
