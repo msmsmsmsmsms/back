@@ -252,7 +252,7 @@ def parse_citylink(query):
         if count == 3:
             break
         if i.get('brand') != "NONAME":
-            product_list['products'].append({'name': i.get('name'), 'price': int(i.get('price')[0:len(i.get('price'))-2]), 'link': 'https://www.citilink.ru/' + i.get('link_url')})
+            product_list['products'].append({'name': i.get('name')[:i.get('name').find(',')], 'price': int(i.get('price')[0:len(i.get('price'))-2]), 'link': 'https://www.citilink.ru/' + i.get('link_url')})
         count += 1
     
     with open('jsons\citylink.json', 'w', encoding='utf-8') as file:

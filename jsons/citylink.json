@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Ноутбук ASUS Vivobook 15 M1503Q, 15.6\", AMD Ryzen 7 5800H 3.2ГГц, 16ГБ, 512ГБ SSD, AMD Radeon , без операционной системы, синий [90nb0y91-m007r0]",
-            "price": 65990,
-            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-m1503q-ryzen-7-5800h-16gb-ssd512gb-15-6-oled-2-8-1859578/"
+            "name": "Смартфон Xiaomi 12 8/128Gb",
+            "price": 64990,
+            "link": "https://www.citilink.ru//product/smartfon-xiaomi-12-128gb-8gb-purpurnyi-3g-4g-2sim-6-28-amoled-1080x240-1738609/"
         },
         {
-            "name": "Ноутбук ASUS Vivobook 15 M1503Q, 15.6\", AMD Ryzen 7 5800H 3.2ГГц, 16ГБ, 512ГБ SSD, AMD Radeon , без операционной системы, синий [90nb0y91-m007r0]",
-            "price": 65990,
-            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-m1503q-ryzen-7-5800h-16gb-ssd512gb-15-6-oled-2-8-1877957/"
+            "name": "Фотобумага Xiaomi ZINK",
+            "price": 1020,
+            "link": "https://www.citilink.ru//product/fotobumaga-xiaomi-tej4019gl-1616229/"
         },
         {
-            "name": "Ноутбук ASUS Vivobook 15 M1502I, 15.6\", IPS, AMD Ryzen 5 4600H 3.0ГГц, 8ГБ, 512ГБ SSD, AMD Radeon , без операционной системы, серебристый [90nb0y52-m002r0]",
-            "price": 49990,
-            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-m1502i-ryzen-5-4600h-8gb-ssd512gb-15-6-ips-fhd-e-1859534/"
+            "name": "Смартфон Xiaomi 12T 8/128Gb",
+            "price": 40080,
+            "link": "https://www.citilink.ru//product/smartfon-xiaomi-12t-128gb-8gb-sinii-3g-4g-6-67-1080x2400-and12-108mpix-1863726/"
         }
     ]
 }
