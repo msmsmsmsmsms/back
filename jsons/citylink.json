@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "name": "Смартфон Apple iPhone 13 Pro Max 128Gb",
+            "price": 92490,
+            "link": "https://www.citilink.ru//product/smartfon-apple-iphone-13-pro-max-a2641-128gb-128-zelenyi-3g-4g-6-7-ios-1783855/"
+        },
+        {
+            "name": "Смартфон Apple iPhone 13 Pro Max 256Gb",
+            "price": 105990,
+            "link": "https://www.citilink.ru//product/smartfon-apple-iphone-13-pro-max-a2641-256gb-zelenyi-3g-4g-6-7-1284x27-1781419/"
+        },
+        {
+            "name": "Смартфон Apple iPhone 13 Pro Max 128Gb",
+            "price": 92490,
+            "link": "https://www.citilink.ru//product/smartfon-apple-iphone-13-pro-max-a2641-128gb-128-grafit-3g-4g-6-7-ios-1783851/"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "name": "Смартфон Apple iPhone 13 Pro Max 128GB Graphite",
+            "price": 91999,
+            "link": "https://www.eldorado.ru/cat/detail/71655105"
+        },
+        {
+            "name": "Смартфон Apple iPhone 13 Pro Max 128GB Silver",
+            "price": 91999,
+            "link": "https://www.eldorado.ru/cat/detail/71655106"
+        },
+        {
+            "name": "Смартфон Apple iPhone 13 Pro Max 256GB Sierra Blue",
+            "price": 105999,
+            "link": "https://www.eldorado.ru/cat/detail/71655116"
+        }
+    ]
+}
