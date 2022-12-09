@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Смартфон Apple iPhone 13 Pro Max 128GB Alpine Green",
-            "price": 91999,
-            "link": "https://www.mvideo.ru/products/30063190"
+            "name": "Ноутбук ASUS VivoBook 14 F415EA-UB34",
+            "price": 29999,
+            "link": "https://www.mvideo.ru/products/30064664"
         },
         {
-            "name": "Смартфон Apple iPhone 13 Pro Max 256GB Alpine Green",
-            "price": 105999,
-            "link": "https://www.mvideo.ru/products/30063191"
+            "name": "Ноутбук ASUS Vivobook R565JA-BQ2497W",
+            "price": 47999,
+            "link": "https://www.mvideo.ru/products/30061837"
         },
         {
-            "name": "Смартфон Apple iPhone 13 Pro Max 128GB Sierra Blue",
-            "price": 91999,
-            "link": "https://www.mvideo.ru/products/30063583"
+            "name": "Ноутбук ASUS E410MA-TB.CL464BK",
+            "price": 17999,
+            "link": "https://www.mvideo.ru/products/30065781"
         }
     ]
 }

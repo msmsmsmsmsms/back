@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Смартфон Apple iPhone 13 Pro Max 128Gb",
-            "price": 92490,
-            "link": "https://www.citilink.ru//product/smartfon-apple-iphone-13-pro-max-a2641-128gb-128-zelenyi-3g-4g-6-7-ios-1783855/"
+            "name": "Ноутбук ASUS Vivobook 15 M1502I",
+            "price": 46990,
+            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-m1502i-ryzen-5-4600h-8gb-ssd512gb-15-6-ips-fhd-n-1877956/"
         },
         {
-            "name": "Смартфон Apple iPhone 13 Pro Max 256Gb",
-            "price": 105990,
-            "link": "https://www.citilink.ru//product/smartfon-apple-iphone-13-pro-max-a2641-256gb-zelenyi-3g-4g-6-7-1284x27-1781419/"
+            "name": "Ноутбук ASUS Vivobook 15 V5200",
+            "price": 34990,
+            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-v5200-i3-1005g1-8gb-ssd256gb-15-6-ips-fhd-noos-s-1883221/"
         },
         {
-            "name": "Смартфон Apple iPhone 13 Pro Max 128Gb",
-            "price": 92490,
-            "link": "https://www.citilink.ru//product/smartfon-apple-iphone-13-pro-max-a2641-128gb-128-grafit-3g-4g-6-7-ios-1783851/"
+            "name": "Ноутбук ASUS Vivobook 15 M1502I",
+            "price": 49990,
+            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-m1502i-ryzen-5-4600h-8gb-ssd512gb-15-6-ips-fhd-e-1859534/"
         }
     ]
 }
