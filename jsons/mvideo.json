@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Ноутбук ASUS VivoBook 14 F415EA-UB34",
-            "price": 29999,
-            "link": "https://www.mvideo.ru/products/30064664"
+            "name": "Наушники Apple AirPods with Charging Case",
+            "price": 10999,
+            "link": "https://www.mvideo.ru/products/50172848"
         },
         {
-            "name": "Ноутбук ASUS Vivobook R565JA-BQ2497W",
-            "price": 47999,
-            "link": "https://www.mvideo.ru/products/30061837"
+            "name": "Наушники Apple AirPods Pro (2nd generation)",
+            "price": 22999,
+            "link": "https://www.mvideo.ru/products/50173295"
         },
         {
-            "name": "Ноутбук ASUS E410MA-TB.CL464BK",
-            "price": 17999,
-            "link": "https://www.mvideo.ru/products/30065781"
+            "name": "Наушники Apple AirPods (3rd generation) MME73",
+            "price": 14999,
+            "link": "https://www.mvideo.ru/products/50173009"
         }
     ]
 }

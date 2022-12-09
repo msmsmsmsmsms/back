@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Ноутбук ASUS Vivobook 15 M1502I",
-            "price": 46990,
-            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-m1502i-ryzen-5-4600h-8gb-ssd512gb-15-6-ips-fhd-n-1877956/"
+            "name": "Наушники Panasonic RP-HT161E-K",
+            "price": 1390,
+            "link": "https://www.citilink.ru//product/naushniki-panasonic-rp-ht161e-k-3-5-mm-monitornye-chernyi-548380/"
         },
         {
-            "name": "Ноутбук ASUS Vivobook 15 V5200",
-            "price": 34990,
-            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-v5200-i3-1005g1-8gb-ssd256gb-15-6-ips-fhd-noos-s-1883221/"
+            "name": "Наушники Panasonic RP-HT010GU-H",
+            "price": 889,
+            "link": "https://www.citilink.ru//product/naushniki-panasonic-rp-ht010gu-h-3-5-mm-nakladnye-seryi-32663/"
         },
         {
-            "name": "Ноутбук ASUS Vivobook 15 M1502I",
-            "price": 49990,
-            "link": "https://www.citilink.ru//product/noutbuk-asus-vivobook-m1502i-ryzen-5-4600h-8gb-ssd512gb-15-6-ips-fhd-e-1859534/"
+            "name": "Наушники Sennheiser HD 350BT",
+            "price": 10390,
+            "link": "https://www.citilink.ru//product/naushniki-sennheiser-hd-350bt-bluetooth-usb-type-c-monitornye-chernyi-1214721/"
         }
     ]
 }
