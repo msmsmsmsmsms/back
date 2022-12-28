@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Ноутбук MSI Prestige 15 A12SC-220RU",
-            "price": 96999,
-            "link": "https://www.eldorado.ru/cat/detail/71668891"
+            "name": "Ноутбук Lenovo IdP 3 15IGL05/81WQ007EUE",
+            "price": 17999,
+            "link": "https://www.eldorado.ru/cat/detail/71663193"
         },
         {
-            "name": "Ноутбук MSI Creator Z17 A12UGST-255RU",
-            "price": 242999,
-            "link": "https://www.eldorado.ru/cat/detail/71668879"
+            "name": "Ноутбук Lenovo IdeaPad 5 15ITL05 (82FG0165US)",
+            "price": 49999,
+            "link": "https://www.eldorado.ru/cat/detail/71665486"
         },
         {
-            "name": "Игровой ноутбук MSI Katana GF76 11SC-677XRU",
-            "price": 74999,
-            "link": "https://www.eldorado.ru/cat/detail/71640937"
+            "name": "Ноутбук Lenovo IdeaPad 3 14ADA05 (81W000FXRU)",
+            "price": 39999,
+            "link": "https://www.eldorado.ru/cat/detail/71581539"
         }
     ]
 }

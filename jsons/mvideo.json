@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Ноутбук игровой MSI Katana GF66 11UE-655RU",
-            "price": 99999,
-            "link": "https://www.mvideo.ru/products/30061603"
+            "name": "Ноутбук Lenovo V15 G2 ITL 82KB00N5UK",
+            "price": 39999,
+            "link": "https://www.mvideo.ru/products/30065989"
         },
         {
-            "name": "Ноутбук MSI Modern 15 A10M-658RU",
-            "price": 49999,
-            "link": "https://www.mvideo.ru/products/30058340"
+            "name": "Ноутбук Lenovo IdeaPad 3 15ITL6 82H8005FRK",
+            "price": 37790,
+            "link": "https://www.mvideo.ru/products/400054829"
         },
         {
-            "name": "Ноутбук игровой MSI Crosshair 15 R6E B12UEZ-611RU",
-            "price": 134999,
-            "link": "https://www.mvideo.ru/products/30062485"
+            "name": "Ноутбук игровой Lenovo Ideapad Gaming 3 15IHU6 82K10198IN",
+            "price": 64999,
+            "link": "https://www.mvideo.ru/products/30066078"
         }
     ]
 }
