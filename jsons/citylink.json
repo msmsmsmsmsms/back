@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Наушники Panasonic RP-HT161E-K",
-            "price": 1390,
-            "link": "https://www.citilink.ru//product/naushniki-panasonic-rp-ht161e-k-3-5-mm-monitornye-chernyi-548380/"
+            "name": "Ноутбук MSI GP66 Leopard 11UG-699XRU",
+            "price": 99990,
+            "link": "https://www.citilink.ru//product/noutbuk-msi-gp66-leopard-11ug-699xru-i7-11800h-16gb-ssd512gb-rtx-3070-1849727"
         },
         {
-            "name": "Наушники Panasonic RP-HT010GU-H",
-            "price": 889,
-            "link": "https://www.citilink.ru//product/naushniki-panasonic-rp-ht010gu-h-3-5-mm-nakladnye-seryi-32663/"
+            "name": "Ноутбук MSI Pulse GL76 12UEK-073XRU",
+            "price": 123990,
+            "link": "https://www.citilink.ru//product/noutbuk-msi-pulse-gl76-12uek-i7-12700h-16gb-ssd512gb-rtx-3060-6gb-17-3-1834108"
         },
         {
-            "name": "Наушники Sennheiser HD 350BT",
-            "price": 10390,
-            "link": "https://www.citilink.ru//product/naushniki-sennheiser-hd-350bt-bluetooth-usb-type-c-monitornye-chernyi-1214721/"
+            "name": "Ноутбук MSI Pulse GL66 12UEK-289XRU",
+            "price": 104990,
+            "link": "https://www.citilink.ru//product/noutbuk-msi-pulse-gl66-12uek-i5-12500h-8gb-ssd512gb-rtx-3060-6gb-15-6-1835023"
         }
     ]
 }

@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Наушники Apple AirPods with Charging Case",
-            "price": 10999,
-            "link": "https://www.eldorado.ru/cat/detail/71656205"
+            "name": "Ноутбук MSI Prestige 15 A12SC-220RU",
+            "price": 96999,
+            "link": "https://www.eldorado.ru/cat/detail/71668891"
         },
         {
-            "name": "Игровые наушники ОКЛИК HS-L310G Guardian Black",
-            "price": 699,
-            "link": "https://www.eldorado.ru/cat/detail/71342054"
+            "name": "Ноутбук MSI Creator Z17 A12UGST-255RU",
+            "price": 242999,
+            "link": "https://www.eldorado.ru/cat/detail/71668879"
         },
         {
-            "name": "Беспроводные наушники с микрофоном JBL JBLT215TWSWHT",
-            "price": 4999,
-            "link": "https://www.eldorado.ru/cat/detail/71570392"
+            "name": "Игровой ноутбук MSI Katana GF76 11SC-677XRU",
+            "price": 74999,
+            "link": "https://www.eldorado.ru/cat/detail/71640937"
         }
     ]
 }

@@ -1,19 +1,19 @@
 {
     "products": [
         {
-            "name": "Наушники Apple AirPods with Charging Case",
-            "price": 10999,
-            "link": "https://www.mvideo.ru/products/50172848"
+            "name": "Ноутбук игровой MSI Katana GF66 11UE-655RU",
+            "price": 99999,
+            "link": "https://www.mvideo.ru/products/30061603"
         },
         {
-            "name": "Наушники Apple AirPods Pro (2nd generation)",
-            "price": 22999,
-            "link": "https://www.mvideo.ru/products/50173295"
+            "name": "Ноутбук MSI Modern 15 A10M-658RU",
+            "price": 49999,
+            "link": "https://www.mvideo.ru/products/30058340"
         },
         {
-            "name": "Наушники Apple AirPods (3rd generation) MME73",
-            "price": 14999,
-            "link": "https://www.mvideo.ru/products/50173009"
+            "name": "Ноутбук игровой MSI Crosshair 15 R6E B12UEZ-611RU",
+            "price": 134999,
+            "link": "https://www.mvideo.ru/products/30062485"
         }
     ]
 }
